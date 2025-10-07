@@ -8,21 +8,18 @@ burger.addEventListener('click', () => {
 });
 
 burger.onclick = function () {
-    // Створюємо li
+
     let li = document.createElement('li');
 
-    // Створюємо a всередину li
     let a = document.createElement('a');
     a.innerHTML = '✖';
-    a.href = '#'; // посилання для семантики
+    a.href = '#';
     a.onclick = function(e) {
-        e.preventDefault(); // запобігаємо переходу по #
-        location.reload();  // перезавантажуємо сторінку
+        e.preventDefault();
+        location.reload();
     };
 
-    // Вставляємо a в li
     li.appendChild(a);
 
-    // Вставляємо li в меню
     menu.appendChild(li);
 };

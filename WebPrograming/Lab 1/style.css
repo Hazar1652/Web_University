@@ -426,7 +426,6 @@ header{
     .navigation.active {
         left: 0;
     }
-    /* зменшення тексту */
     .mainWords {
         font-size: 35px;
         line-height: 50px;
@@ -471,7 +470,7 @@ header{
     .comUser p{
         font-size: 13px;
     }
-    /* зменшення тексту */
+
     .mainWords {
         font-size: 28px;
         line-height: 40px;
@@ -502,3 +501,96 @@ header{
         font-size: 12px;
     }
 }
+/* ---------- 4K (Ultra HD) ---------- */
+@media (min-width: 2560px) {
+    body {
+        font-size: 20px;
+    }
+
+    header {
+        max-width: 2200px;
+        height: 80px;
+        padding: 0 50px;
+    }
+
+    .mainWords {
+        font-size: 80px;
+        line-height: 100px;
+        animation: fadeInUp 1.5s ease;
+    }
+
+    .classicWords {
+        font-size: 24px;
+        line-height: 40px;
+        max-width: 900px;
+        animation: fadeIn 2s ease;
+    }
+
+    .getStarted {
+        width: 350px;
+        height: 90px;
+        font-size: 24px;
+        border-radius: 15px;
+        animation: pulse 2s infinite;
+    }
+
+    .providing h2 {
+        font-size: 55px;
+        line-height: 75px;
+    }
+
+    .providing p,
+    .providingP,
+    .option p {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .commentTitle h2 {
+        font-size: 55px;
+        line-height: 75px;
+    }
+
+    .commentTitle p {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .subscribe h2 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+
+    .subscribe p {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .btn a, .btn button {
+        font-size: 22px;
+    }
+
+    .comUser {
+        width: 600px;
+        height: 400px;
+        font-size: 20px;
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(245, 56, 85, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(245, 56, 85, 0.5);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(245, 56, 85, 0.7);
+    }
+}
+.getStarted {
+    animation: pulse 2s infinite;
+}
+
